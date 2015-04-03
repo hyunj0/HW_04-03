@@ -3,6 +3,8 @@ package nyc.c4q.hyunj0;
 import java.net.URL;
 import java.util.Scanner;
 
+//Based from http://stackoverflow.com/questions/19540438/remove-data-between-two-strings
+
 public class WebPageSanitizer
 {
 
