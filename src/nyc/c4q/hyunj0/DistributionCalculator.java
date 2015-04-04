@@ -70,10 +70,9 @@ public class DistributionCalculator
         DecimalFormat df = new DecimalFormat("#.##");
         for(int i = 97; i < 123; i++)
         {
-            distributionOfCharacters.add(alphabet.generateLetter(i) + " = " + df
-                    .format(alphabet.letterCount(new File(
-                            "/Users/c4q-sarahkim/Desktop/accesscode/HW_04-03/src/nyc/c4q/hyunj0/alphabet.txt"),
-                                                 (char) i) / allLetter) + " %");
+            distributionOfCharacters.add(alphabet.generateLetter(i) + " = "
+                + df.format((alphabet.letterCount(new File("/Users/c4q-sarahkim/Desktop/accesscode/HW_04-03/src/nyc/c4q/hyunj0/alphabet.txt"),
+                    (char) i) / allLetter) * 100) + " %");
         }
         return distributionOfCharacters;
     }
